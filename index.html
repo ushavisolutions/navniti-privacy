@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - NavNiti</title>
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #475569;
+            --accent: #0f172a;
+            --border: #e2e8f0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid var(--border);
+        }
+        h1 {
+            font-size: 2rem;
+            color: var(--accent);
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+        h2 {
+            font-size: 1.25rem;
+            color: var(--accent);
+            margin-top: 32px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 6px;
+        }
+        p {
+            margin-top: 0;
+            margin-bottom: 16px;
+            color: var(--text-main);
+        }
+        .meta {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 32px;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid var(--border);
+            margin: 24px 0;
+        }
+        ul {
+            margin-top: 0;
+            margin-bottom: 16px;
+            padding-left: 24px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight-box {
+            background-color: var(--bg-color);
+            border-left: 4px solid var(--text-muted);
+            padding: 16px;
+            margin: 24px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+        a {
+            color: var(--text-muted);
+            text-decoration: underline;
+        }
+        a:hover {
+            color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Privacy Policy for NavNiti</h1>
+    <div class="meta">Last Updated: June 19, 2026</div>
+
+    <p>NavNiti ("the Application") is built and operated by UshaVi Solutions ("we," "us," or "our") as a local-first, privacy-driven utility. This Privacy Policy is designed to inform you of our strict practices regarding the protection, non-collection, and non-sharing of your personal and financial data.</p>
+    
+    <p>By utilizing NavNiti, you acknowledge and agree to the architecture outlined in this policy.</p>
+
+    <hr>
+
+    <h2>1. Core Philosophy: Zero Data Collection</h2>
+    <p>Our fundamental architectural choice is that <b>your data belongs to you.</b></p>
+    <ul>
+        <li>We do not operate remote database servers.</li>
+        <li>We do not collect, monitor, store, or transmit your personal identity, financial balances, mutual fund portfolios, or transaction logs.</li>
+        <li>We do not display third-party advertisements or integrate tracking SDKs.</li>
+    </ul>
+
+    <h2>2. On-Device Local Processing</h2>
+    <p>All data processing occurs strictly inside your physical mobile device.</p>
+    <ul>
+        <li><b>CAS Statement Parsing:</b> When you choose to import a Consolidated Account Statement (CAS) PDF or Excel file from CAMS or KFintech, the parsing engine extracts textual transaction blocks entirely on your local CPU.</li>
+        <li><b>Local Storage:</b> The extracted financial records, multi-profile allocations, and custom drift calculations are saved exclusively inside an isolated, secure on-device database wrapper (SQLite).</li>
+    </ul>
+
+    <h2>3. Third-Party Data Sharing</h2>
+    <p>Because we do not collect or store any data, <b>it is physically impossible for us to share, sell, distribute, or monetize your information</b> with any third-party corporate entities, advertising networks, or data brokers.</p>
+
+    <h2>4. Device Permissions</h2>
+    <p>The Application may request specific device-level access tokens to execute localized tasks:</p>
+    <ul>
+        <li><b>Storage / File Access:</b> Explicitly required to let you select and import your downloaded CAS statements into the local database engine.</li>
+    </ul>
+    <div class="highlight-box">
+        <p><i>Note:</i> These permissions are utilized entirely in-memory on your device; no file contents are ever uploaded externally.</p>
+    </div>
+
+    <h2>5. Changes to This Privacy Policy</h2>
+    <p>We may periodically update our Privacy Policy to align with new application capabilities or changing regulatory frameworks. Any changes will be reflected directly on this hosted URL with an updated revision date.</p>
+
+    <h2>6. Contact & Support Channel</h2>
+    <p>If you have questions regarding this local-first privacy framework or require application support, you can reach out directly via our public developer channel:</p>
+    <ul>
+        <li><b>Email:</b> support@ushavi.in</li>
+        <li><b>Developer Entity:</b> UshaVi Solutions</li>
+    </ul>
+</div>
+
+</body>
+</html>
